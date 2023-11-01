@@ -1,0 +1,209 @@
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    /*max-width: 1000px;*/
+    margin: 10px auto;
+    padding: 4%;
+    background: #F7F7F7;
+    border-radius: 14px;
+    box-shadow: 1px 1px 5px #cccccc;
+  }
+  .form-style-6 h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+  }
+  .form-style-6 input[type="text"],
+  .form-style-6 input[type="date"],
+  .form-style-6 input[type="datetime"],
+  .form-style-6 input[type="email"],
+  .form-style-6 input[type="number"],
+  .form-style-6 input[type="search"],
+  .form-style-6 input[type="time"],
+  .form-style-6 input[type="url"],
+  .form-style-6 textarea,
+  .form-style-6 select 
+  {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    /*margin-bottom: 2%;*/
+    border: 1px solid #ccc;
+    padding: 1%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+  }
+  .form-style-6 input[type="text"]:focus,
+  .form-style-6 input[type="date"]:focus,
+  .form-style-6 input[type="datetime"]:focus,
+  .form-style-6 input[type="email"]:focus,
+  .form-style-6 input[type="number"]:focus,
+  .form-style-6 input[type="search"]:focus,
+  .form-style-6 input[type="time"]:focus,
+  .form-style-6 input[type="url"]:focus,
+  .form-style-6 textarea:focus,
+  .form-style-6 select:focus
+  {
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 1%;
+    border: 1px solid #43D1AF;
+  }
+  .form-style-6 input[type="submit"],
+  .form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 33%;
+    padding: 1%;
+    background: #00518C;
+    border-bottom: 2px solid #00518C;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;	
+    color: #fff;
+    margin-left:33%;
+    margin-right:33%;
+    border-radius: 14px;
+  }
+  
+  .form-style-6 input[type="submit"]:hover,
+  .form-style-6 input[type="button"]:hover{
+    background: #E2EFFB;
+    color:#00518C
+  }
+  textarea {
+    resize: none;
+  }
+  .loadingDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.3;
+    display: none;
+  }
+  
+  .popup {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 15px #555555;
+    padding:1%;
+    display: none;
+  }
+  
+  #dialog {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 15px #555555;
+    padding:1%;
+    display: none;
+  }
+  
+  #dialog p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 1.0em;
+  }
+  
+  #homeButton {
+    margin-top: 10px;
+  }
+  
+  #submit:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
+  .formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;
+  }
+
+  .headingsGrid {
+      display: grid;
+      grid-template-columns: 3fr 1fr 2fr 1fr; 
+      gap: 5px;
+      padding-left:8px;
+      padding-top:4px;
+      padding-bottom:4px;
+      padding-right:8px;
+  }
+
+  .headingsCell {
+    font-size: 9px;
+    font-weight: bold;
+    color: rgb(102, 102, 102)
+  }
+  
+  #grid  {
+      display: grid;
+      grid-template-columns: 3fr 1fr 2fr 1fr; 
+      gap: 5px;
+      background-color: #fff; 
+      border-radius: 3px;
+      padding:8px;
+      height:auto;
+      max-height:250px;
+      overflow-y: auto;
+      border:1px #cccccc solid
+  }
+
+  .row {
+        display: contents;
+  } 
+
+  .cell {
+    border: 1px solid #dddddd;
+    padding: 3px;
+    font-size: 12px;
+  }
+
+  .header {
+    padding: 3px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .selected {
+    background-color:#E2EFFB;
+  }
+  
+  .row::before,
+  .row::after {
+    content: none;
+  }
+
+  form label {
+    font-weight: bold;
+    color:#666
+  }
+
+  legend {
+    color:#00518C;
+    font-size: clamp(10px, 2.5vw, 32px);
+  }
